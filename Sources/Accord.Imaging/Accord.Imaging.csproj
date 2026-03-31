@@ -7,7 +7,6 @@
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <TargetFrameworkProfile />
   </PropertyGroup>
-  <Import Project="..\Accord.NET.targets" />
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugType>Full</DebugType>
     <Optimize>False</Optimize>
@@ -359,8 +358,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Accord.Imaging.cd" />
-    <None Include="Accord.snk" />
     <None Include="Converters\Accord.Imaging.Converters.cd" />
     <None Include="Filters\Accord.Imaging.Filters.cd" />
   </ItemGroup>

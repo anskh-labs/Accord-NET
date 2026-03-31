@@ -7,7 +7,6 @@
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <TargetFrameworkProfile />
   </PropertyGroup>
-  <Import Project="..\Accord.NET.targets" />
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugType>Full</DebugType>
     <Optimize>False</Optimize>
@@ -41,6 +40,12 @@
     <DefineConstants>TRACE;MONO</DefineConstants>
     <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -158,11 +163,6 @@
     <Compile Include="Sparse`1.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Accord.dll.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Accord.snk" />
-    <None Include="Accord.Core.cd" />
     <None Include="MachineLearning\Classifiers\Multiclass\Binary\Binary.cd" />
     <None Include="MachineLearning\Classifiers\Multiclass\Multiclass.cd" />
     <None Include="MachineLearning\Classifiers\Multilabel\Multilabel.cd" />

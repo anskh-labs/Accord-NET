@@ -7,7 +7,6 @@
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <TargetFrameworkProfile />
   </PropertyGroup>
-  <Import Project="..\Accord.NET.targets" />
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugType>Full</DebugType>
     <Optimize>False</Optimize>
@@ -639,8 +638,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Accord.Math.cd" />
-    <None Include="Accord.snk" />
     <None Include="Decompositions\LuDecomposition.tt">
       <LastGenOutput>LuDecomposition.txt</LastGenOutput>
       <Generator>TextTemplatingFileGenerator</Generator>

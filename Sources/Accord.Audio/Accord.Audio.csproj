@@ -7,7 +7,6 @@
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <TargetFrameworkProfile />
   </PropertyGroup>
-  <Import Project="$(SolutionDir)Accord.NET.targets" />
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugType>Full</DebugType>
     <Optimize>False</Optimize>
@@ -41,6 +40,12 @@
     <DefineConstants>TRACE;MONO</DefineConstants>
     <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
   <ItemGroup>
@@ -120,8 +125,6 @@
     <Compile Include="Windows\IWindow.cs" />
     <Compile Include="Windows\Extensions.cs" />
     <Compile Include="Windows\WindowBase.cs" />
-    <None Include="Accord.snk" />
-    <None Include="Accord.Audio.cd" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Accord.Core\Accord.Core.csproj">

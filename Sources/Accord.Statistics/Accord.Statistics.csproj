@@ -7,7 +7,6 @@
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <TargetFrameworkProfile />
   </PropertyGroup>
-  <Import Project="..\Accord.NET.targets" />
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugType>Full</DebugType>
     <Optimize>False</Optimize>
@@ -566,14 +565,11 @@
   <ItemGroup>
     <None Include="Accord.MachineLearning\Classifiers\Binary\Binary.cd" />
     <None Include="Accord.MachineLearning\Classifiers\Multiple\Multiclass\Multiclass.cd" />
-    <None Include="Accord.snk" />
-    <None Include="Accord.Statistics.cd" />
     <None Include="Analysis\Accord.Statistics.Analysis.cd" />
     <None Include="Distributions\Accord.Statistics.Distributions.cd" />
     <None Include="Distributions\Multivariate\Accord.Statistics.Distributions.Multivariate.cd" />
     <None Include="Distributions\Univariate\Accord.Statistics.Distributions.Univariate.cd" />
     <None Include="Kernels\Accord.Statistics.Kernels.cd" />
-    <None Include="Accord.MachineLearning\Accord.MachineLearning.Core.cd" />
     <None Include="Models\Accord.Statistics.Models.cd">
       <SubType>Designer</SubType>
     </None>

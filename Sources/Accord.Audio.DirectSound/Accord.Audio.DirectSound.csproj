@@ -7,7 +7,6 @@
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <TargetFrameworkProfile />
   </PropertyGroup>
-  <Import Project="..\Accord.NET.targets" />
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugType>Full</DebugType>
     <Optimize>False</Optimize>
@@ -103,10 +102,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Formats\WaveDecoder.cs" />
     <Compile Include="WaveFileAudioSource.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Accord.snk" />
-    <None Include="Accord.DirectSound.cd" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
